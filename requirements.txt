@@ -1,0 +1,5 @@
+jupyterlab~=4.2.5
+obspy~=1.4.1
+matplotlib~=3.9.2
+
+
