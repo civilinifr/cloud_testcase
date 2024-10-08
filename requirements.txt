@@ -1,0 +1,8 @@
+--extra-index-url https://test.pypi.org/simple/
+jupyterlab~=4.2.5
+obspy~=1.4.1
+matplotlib~=3.9.2
+pds.updart==0.2.0.dev0
+
+
+
