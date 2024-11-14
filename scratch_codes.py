@@ -9,7 +9,7 @@ import numpy as np
 import os
 import requests
 import datetime as dt
-import pds.updart as upd
+import pds.peppi as pep
 
 def main():
     """
@@ -18,12 +18,12 @@ def main():
     :return:
     """
 
-    client = upd.PDSRegistryClient()
+    client = pep.PDSRegistryClient()
 
     day_to_download = '1970-03-25'
     day = datetime.strptime(day_to_download, "%Y-%m-%d")
 
-    products = upd.Products(client).of_collection("urn:nasa:pds:apollo_pse:data_seed::1.0")
+    products = pep.Products(client).of_collection("urn:nasa:pds:apollo_pse:data_seed::1.0")
 
     dataless_data_products = [p for p in products if
                              p.properties["pds:File.pds:file_name"][0] == 'dataless.xa.0.seed']
